@@ -3,15 +3,43 @@
 This is a placeholder for Padmnabham Vijay Khedekar's resume.
 In a real implementation, this would be a PDF file containing:
 
-- Contact Information
-- Professional Summary
-- Education Details
-- Technical Skills
-- Projects
-- Certifications
-- Experience (if any)
+## Contact Information
+- Name: Padmnabham Vijay Khedekar
+- Email: padmnabham.khedekar@email.com
+- Phone: +91 XXXXX XXXXX
+- Location: India
+- LinkedIn: linkedin.com/in/padmnabham-khedekar
+- GitHub: github.com/padmnabham-khedekar
+
+## Professional Summary
+Computer Science Engineering graduate (2026) passionate about data analysis and machine learning. Proficient in Python, SQL, Power BI, and various ML algorithms. Seeking entry-level opportunities as Data Analyst or Data Scientist.
+
+## Education
+**Bachelor of Technology in Computer Science Engineering**
+University Name | 2022 - 2026 (Expected)
+- Relevant Coursework: Data Structures, Algorithms, Database Management, Machine Learning, Statistics
+
+## Technical Skills
+- **Programming:** Python, SQL, JavaScript, R
+- **Data Analysis:** Pandas, NumPy, Excel, Power BI, Tableau
+- **Machine Learning:** Scikit-learn, TensorFlow, ML Algorithms
+- **Databases:** MySQL, PostgreSQL, MongoDB
+- **Web Development:** React, HTML/CSS, Node.js
+- **Tools:** Git, Docker, AWS, Generative AI
+
+## Projects
+1. **Sales Analytics Dashboard** - Power BI, SQL, Excel
+2. **Customer Churn Prediction** - Python, Scikit-learn, Pandas
+3. **Sentiment Analysis Tool** - Python, NLP, Generative AI
+4. **Data Pipeline Automation** - Python, SQL, Apache Airflow
+
+## Certifications
+- Data Analysis with Python (IBM/Coursera)
+- SQL for Data Science (University of California)
+- Machine Learning Specialization (Stanford University)
+- Power BI Data Analyst (Microsoft)
 
 To replace this placeholder:
 1. Create a professional PDF resume
 2. Replace this file with the actual PDF
-3. Ensure the filename matches the download link in the HTML
+3. Ensure the filename matches the download link in the components
