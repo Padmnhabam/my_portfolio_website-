@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ApiService from '../services/api';
 import { 
   Mail, 
   Phone, 
@@ -28,6 +29,7 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -40,18 +42,33 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Thank you for your message! I\'ll get back to you soon.');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    try {
+      const response = await ApiService.submitContact(formData);
+      
+      if (response.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: response.message
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: error.message || 'Failed to send message. Please try again.'
       });
+    } finally {
       setIsSubmitting(false);
-    }, 2000);
+    }
   };
 
   const contactInfo = [
@@ -265,6 +282,12 @@ const Contact = () => {
                   </>
                 )}
               </button>
+
+              {submitStatus && (
+                <div className={`submit-status ${submitStatus.type}`}>
+                  {submitStatus.message}
+                </div>
+              )}
             </form>
           </motion.div>
         </motion.div>
