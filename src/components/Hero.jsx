@@ -6,10 +6,10 @@ import './Hero.css';
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const roles = [
-    'Data Analyst',
-    'Data Scientist',
-    'ML Engineer',
-    'Python Developer'
+    'Full Stack Developer',
+    'Frontend Developer',
+    'Backend Developer',
+    'Software Engineer'
   ];
 
   useEffect(() => {
@@ -21,10 +21,10 @@ const Hero = () => {
   }, []);
 
   const floatingIcons = [
-    { Icon: Database, delay: 0, position: { top: '20%', left: '10%' } },
-    { Icon: BarChart3, delay: 0.5, position: { top: '60%', left: '15%' } },
-    { Icon: Brain, delay: 1, position: { top: '30%', right: '10%' } },
-    { Icon: Code, delay: 1.5, position: { top: '70%', right: '15%' } }
+    { Icon: Code, delay: 0, position: { top: '20%', left: '10%' } },
+    { Icon: Database, delay: 0.5, position: { top: '60%', left: '15%' } },
+    { Icon: Code, delay: 1, position: { top: '30%', right: '10%' } },
+    { Icon: Database, delay: 1.5, position: { top: '70%', right: '15%' } }
   ];
 
   return (
@@ -72,8 +72,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Computer Science Engineering graduate passionate about transforming data into actionable insights. 
-              Proficient in Python, SQL, Machine Learning, and Data Visualization.
+              Computer Science Engineering graduate passionate about building scalable web applications and elegant solutions.
+              Proficient in React, Node.js, JavaScript, TypeScript, and modern development practices.
             </motion.p>
 
             <motion.div

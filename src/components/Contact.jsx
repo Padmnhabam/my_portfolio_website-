@@ -154,8 +154,8 @@ const Contact = () => {
           <motion.div className="contact-info" variants={itemVariants}>
             <h3>Let's Connect</h3>
             <p>
-              I'm actively seeking opportunities as a Data Analyst or Data Scientist. 
-              Let's discuss how I can contribute to your team's success.
+              I'm actively seeking opportunities as a Software Developer or Full Stack Engineer.
+              Let's discuss how I can contribute to your team with innovative solutions.
             </p>
 
             <div className="contact-details">

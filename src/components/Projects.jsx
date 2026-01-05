@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  BarChart3, 
-  Brain, 
-  MessageSquare, 
-  Database, 
-  ExternalLink, 
-  Github 
+import {
+  ShoppingCart,
+  MessageCircle,
+  Palette,
+  Cloud,
+  ExternalLink,
+  Github
 } from 'lucide-react';
 import './Projects.css';
 
@@ -19,44 +19,44 @@ const Projects = () => {
 
   const projects = [
     {
-      icon: BarChart3,
-      title: 'Sales Analytics Dashboard',
-      description: 'Interactive Power BI dashboard analyzing sales performance across multiple regions. Implemented advanced DAX calculations and created dynamic visualizations for executive reporting.',
-      technologies: ['Power BI', 'SQL', 'Excel', 'DAX'],
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      icon: ShoppingCart,
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce application with product catalog, shopping cart, checkout flow, and admin dashboard. Integrated Stripe payments and implemented user authentication with JWT.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      gradient: 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)',
       links: {
         github: '#',
         demo: '#'
       }
     },
     {
-      icon: Brain,
-      title: 'Customer Churn Prediction',
-      description: 'Machine learning model to predict customer churn using ensemble methods. Achieved 92% accuracy with feature engineering and hyperparameter tuning.',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      icon: MessageCircle,
+      title: 'Real-Time Chat Application',
+      description: 'Modern chat application with real-time messaging, group chats, file sharing, and typing indicators. Built with WebSocket technology for instant communication.',
+      technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
+      gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
       links: {
         github: '#',
         demo: '#'
       }
     },
     {
-      icon: MessageSquare,
-      title: 'Sentiment Analysis Tool',
-      description: 'NLP-based sentiment analysis application using generative AI techniques. Processes social media data to extract insights about brand perception.',
-      technologies: ['Python', 'NLP', 'Generative AI', 'TensorFlow'],
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      icon: Palette,
+      title: 'Design Portfolio Website',
+      description: 'Responsive portfolio website with smooth animations, lazy loading, and optimized performance. Features dynamic content management and contact form with email notifications.',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
       links: {
         github: '#',
         demo: '#'
       }
     },
     {
-      icon: Database,
-      title: 'Data Pipeline Automation',
-      description: 'Automated ETL pipeline for processing large datasets from multiple sources. Implemented data quality checks and real-time monitoring capabilities.',
-      technologies: ['Python', 'SQL', 'Apache Airflow', 'Docker'],
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+      icon: Cloud,
+      title: 'Cloud Storage Service',
+      description: 'File storage and sharing platform with drag-and-drop upload, folder organization, and secure file sharing. Implemented user authentication and AWS S3 integration.',
+      technologies: ['React', 'Node.js', 'AWS S3', 'MongoDB'],
+      gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
       links: {
         github: '#',
         demo: '#'

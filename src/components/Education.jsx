@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  GraduationCap, 
-  Calendar, 
-  MapPin, 
+import {
+  GraduationCap,
+  Calendar,
+  MapPin,
   Award,
   BookOpen,
   Code,
-  Database,
-  BarChart3
+  Layers,
+  Server
 } from 'lucide-react';
 import './Education.css';
 
@@ -25,45 +25,45 @@ const Education = () => {
     location: 'City, State',
     duration: '2022 - 2026',
     status: 'Expected Graduation: 2026',
-    description: 'Comprehensive curriculum covering data structures, algorithms, database management, machine learning, and software engineering principles. Active participation in coding competitions and technical workshops.',
+    description: 'Comprehensive curriculum covering data structures, algorithms, database management, web development, and software engineering principles. Active participation in coding competitions, hackathons, and open-source contributions.',
     achievements: [
       'Data Structures & Algorithms',
       'Database Management Systems',
-      'Machine Learning',
-      'Software Engineering',
       'Web Development',
-      'Statistics & Probability'
+      'Software Engineering',
+      'Operating Systems',
+      'Computer Networks'
     ]
   };
 
   const certifications = [
     {
-      icon: BarChart3,
-      title: 'Data Analysis with Python',
-      issuer: 'IBM/Coursera',
+      icon: Layers,
+      title: 'React - The Complete Guide',
+      issuer: 'Udemy',
       date: '2024',
-      skills: ['Python', 'Pandas', 'NumPy', 'Matplotlib']
+      skills: ['React', 'Hooks', 'Redux', 'Next.js']
     },
     {
-      icon: Database,
-      title: 'SQL for Data Science',
-      issuer: 'University of California',
+      icon: Server,
+      title: 'Node.js Backend Development',
+      issuer: 'Coursera',
       date: '2024',
-      skills: ['SQL', 'Database Design', 'Query Optimization']
+      skills: ['Node.js', 'Express', 'REST APIs', 'MongoDB']
     },
     {
       icon: Code,
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford University',
+      title: 'Full Stack Web Development',
+      issuer: 'freeCodeCamp',
       date: '2023',
-      skills: ['ML Algorithms', 'Scikit-learn', 'TensorFlow']
+      skills: ['HTML/CSS', 'JavaScript', 'React', 'Node.js']
     },
     {
       icon: Award,
-      title: 'Power BI Data Analyst',
-      issuer: 'Microsoft',
+      title: 'AWS Certified Cloud Practitioner',
+      issuer: 'Amazon Web Services',
       date: '2023',
-      skills: ['Power BI', 'DAX', 'Data Modeling']
+      skills: ['AWS', 'Cloud Computing', 'S3', 'EC2']
     }
   ];
 

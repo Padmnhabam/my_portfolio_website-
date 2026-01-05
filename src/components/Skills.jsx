@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  Code, 
-  BarChart3, 
-  Brain, 
-  Database, 
-  Globe, 
-  Zap 
+import {
+  Code,
+  Layers,
+  Server,
+  Database,
+  Globe,
+  Zap
 } from 'lucide-react';
 import './Skills.css';
 
@@ -22,60 +22,60 @@ const Skills = () => {
       icon: Code,
       title: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 90 },
-        { name: 'SQL', level: 85 },
-        { name: 'JavaScript', level: 75 },
-        { name: 'R', level: 70 }
+        { name: 'JavaScript', level: 90 },
+        { name: 'TypeScript', level: 85 },
+        { name: 'Python', level: 80 },
+        { name: 'Java', level: 75 }
       ]
     },
     {
-      icon: BarChart3,
-      title: 'Data Visualization',
+      icon: Layers,
+      title: 'Frontend Development',
       skills: [
-        { name: 'Power BI', level: 88 },
-        { name: 'Tableau', level: 80 },
-        { name: 'Excel', level: 85 },
-        { name: 'Matplotlib/Seaborn', level: 82 }
+        { name: 'React', level: 90 },
+        { name: 'Next.js', level: 85 },
+        { name: 'HTML/CSS', level: 92 },
+        { name: 'Tailwind CSS', level: 88 }
       ]
     },
     {
-      icon: Brain,
-      title: 'Machine Learning',
+      icon: Server,
+      title: 'Backend Development',
       skills: [
-        { name: 'Scikit-learn', level: 85 },
-        { name: 'TensorFlow', level: 75 },
-        { name: 'NumPy', level: 88 },
-        { name: 'Pandas', level: 90 }
+        { name: 'Node.js', level: 88 },
+        { name: 'Express.js', level: 85 },
+        { name: 'REST APIs', level: 90 },
+        { name: 'GraphQL', level: 75 }
       ]
     },
     {
       icon: Database,
-      title: 'Databases & Big Data',
+      title: 'Databases',
       skills: [
-        { name: 'MySQL', level: 85 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'Apache Spark', level: 70 }
+        { name: 'MongoDB', level: 85 },
+        { name: 'PostgreSQL', level: 82 },
+        { name: 'MySQL', level: 80 },
+        { name: 'Redis', level: 70 }
       ]
     },
     {
       icon: Globe,
-      title: 'Web Development',
+      title: 'Tools & Platforms',
       skills: [
-        { name: 'React', level: 80 },
-        { name: 'HTML/CSS', level: 85 },
-        { name: 'Node.js', level: 75 },
-        { name: 'REST APIs', level: 78 }
+        { name: 'Git/GitHub', level: 90 },
+        { name: 'Docker', level: 80 },
+        { name: 'AWS', level: 75 },
+        { name: 'Vercel/Netlify', level: 85 }
       ]
     },
     {
       icon: Zap,
-      title: 'AI & Tools',
+      title: 'Other Skills',
       skills: [
-        { name: 'Generative AI', level: 75 },
-        { name: 'Git/GitHub', level: 85 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 }
+        { name: 'Testing (Jest/Vitest)', level: 80 },
+        { name: 'CI/CD', level: 75 },
+        { name: 'Agile/Scrum', level: 85 },
+        { name: 'Responsive Design', level: 90 }
       ]
     }
   ];

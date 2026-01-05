@@ -13,15 +13,15 @@ const About = () => {
   const stats = [
     {
       icon: Target,
-      number: '10+',
+      number: '15+',
       label: 'Projects Completed',
-      description: 'Data analysis and ML projects'
+      description: 'Full-stack web applications'
     },
     {
       icon: Award,
-      number: '5+',
+      number: '10+',
       label: 'Technologies Mastered',
-      description: 'Programming languages & tools'
+      description: 'Modern web technologies'
     },
     {
       icon: Calendar,
@@ -33,7 +33,7 @@ const About = () => {
       icon: Users,
       number: '100%',
       label: 'Commitment',
-      description: 'Dedicated to excellence'
+      description: 'Clean code & best practices'
     }
   ];
 
@@ -76,21 +76,21 @@ const About = () => {
             animate={inView ? "visible" : "hidden"}
           >
             <motion.p variants={itemVariants}>
-              I'm a passionate Computer Science Engineering graduate (Class of 2026) with a strong foundation in 
-              data analysis and machine learning. My journey in technology has led me to specialize in extracting 
-              meaningful insights from complex datasets and building predictive models.
-            </motion.p>
-            
-            <motion.p variants={itemVariants}>
-              With hands-on experience in Python, SQL, and various data visualization tools, I'm eager to contribute 
-              to data-driven decision making in a dynamic organization. I believe in the power of data to solve 
-              real-world problems and drive business growth.
+              I'm a passionate Computer Science Engineering graduate (Class of 2026) with a strong foundation in
+              full-stack web development. My journey in technology has led me to specialize in building responsive,
+              user-friendly applications using modern frameworks and best practices.
             </motion.p>
 
             <motion.p variants={itemVariants}>
-              My expertise spans across statistical analysis, machine learning algorithms, data visualization, 
-              and web development. I'm particularly interested in applying AI and machine learning techniques 
-              to solve complex business challenges and create innovative solutions.
+              With hands-on experience in React, Node.js, JavaScript, and TypeScript, I'm eager to contribute
+              to innovative projects in a dynamic organization. I believe in writing clean, maintainable code and
+              creating exceptional user experiences that solve real-world problems.
+            </motion.p>
+
+            <motion.p variants={itemVariants}>
+              My expertise spans across frontend development with React, backend APIs with Node.js, database design,
+              and cloud deployment. I'm particularly interested in building scalable applications and continuously
+              learning new technologies to stay at the forefront of web development.
             </motion.p>
           </motion.div>
 
